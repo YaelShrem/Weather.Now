@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather.Now</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">      
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center title">Weather.Now</h1>
+      
+      <form class="search-loaction">
+        <input
+          type="text"
+          name="city"
+          placeholder="Where? enter city name"
+          autocomplete="off"
+          class="form-control text-muted form-rounded p-4 shadow-sm"
+        />
+      </form>
+
+      <div class="card rounded my-3 shadow-lg d-none back-card">
+        <div class="card-top text-center">
+          <div class="city-name my-3">
+            <p></p>
+          </div>
+          <img src="img/night_image.svg" alt="" class="card-img-top time" />
+        </div>
+
+        <div class="card-body">
+          <!--here comes the data from the js code-->
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/request.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
